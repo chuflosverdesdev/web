@@ -1,7 +1,7 @@
 :root{--black:#070907;--paper:#f3f3ee;--green:#18b85a;--pink:#18b85a;--ink:#070907;--muted:#66706a;--line:rgba(7,9,7,.28)}
 @font-face{font-family:'Permanent Marker';src:url('assets/fonts/marker-felt-wide.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
 :root{--display:'Permanent Marker','Marker-Condensed Italic','Marker Felt','Avenir Next Condensed',Impact,sans-serif}
-.site-header{background:linear-gradient(90deg,var(--black) 0%,var(--black) 7%,var(--paper) 20%,rgba(243,243,238,.96) 34%)}
+.site-header{background:linear-gradient(90deg,var(--black) 0%,var(--black) 7%,#efede4 20%,#efede4 34%)}
 .hero-kicker{font:clamp(44px,5.5vw,88px)/.85 var(--display);color:var(--green);margin:0 0 35px;text-shadow:5px 5px 0 var(--black)}
 .hero-kicker,.section-heading h2,.member h3,.contact-big,.big-note{font-family:'Permanent Marker',var(--display);letter-spacing:-.04em}
 .main-nav a{font-family:'Permanent Marker',var(--display);font-size:11px;letter-spacing:.03em}
