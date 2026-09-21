@@ -13,7 +13,7 @@
 .tour{background-image:linear-gradient(rgba(255,255,255,.3),rgba(255,255,255,.3)),url("assets/imagenBanda/on-tour-bus.png");background-repeat:no-repeat;background-size:cover;background-position:center;}
 .tour-list{background:rgba(34,197,94,.68);padding:0 3vw;backdrop-filter:blur(2px)}
 @media(min-width:761px){.tour{background-size:100% auto;background-position:center center;background-color:#3f3150}}
-@media(max-width:760px){.band{background-attachment:scroll;background-position:center top}.contact-card a{font-size:17px}}
+@media(max-width:760px){.band{background-attachment:scroll;background-position:center top}.contact-card{padding:22px}.contact-card a{font-size:clamp(22px,7vw,34px);line-height:1.1;white-space:normal;word-break:break-word}}
 
 .contact-big {
 	font-family: 'Marker-Condensed Italic', 'Marker Felt', 'Avenir Next Condensed', Impact, sans-serif;
@@ -25,7 +25,7 @@
 .contact-big{color:var(--green);text-shadow:5px 5px 0 var(--black)}
 .contact-card a:hover{color:var(--green)}
 .contact-section{background-image:linear-gradient(rgba(243,243,238,.68),rgba(243,243,238,.68)),url("assets/imagenBanda/contact-background.png");background-repeat:no-repeat;background-size:cover;background-position:center}
-.contact-big{font-family:'Permanent Marker',cursive;font-style:normal}
+.contact-big{font-family:'Marker-Condensed Italic','Marker Felt',sans-serif;font-style:normal}
 .tour-title-image{height:clamp(110px,13vw,185px);margin:0;display:flex;align-items:center}.tour-title-image img{display:block;width:min(100%,620px);height:100%;object-fit:contain;object-position:left center}
 .band-title-image{height:clamp(110px,13vw,185px);margin:0;display:flex;align-items:center}.band-title-image img{display:block;width:min(100%,620px);height:100%;object-fit:contain;object-position:left center}
 .cooking-title-image{height:clamp(110px,13vw,185px);margin:0;display:flex;align-items:center}.cooking-title-image img{display:block;width:min(100%,620px);height:100%;object-fit:contain;object-position:left center}
@@ -35,6 +35,6 @@
 .cooking-copy,.cooking .process{background:rgba(243,243,238,.78);padding:24px;box-shadow:7px 7px 0 rgba(7,9,7,.18)}
 
 .contact-big {
-	font-family: 'Marker-Condensed Italic', 'Marker Felt', 'Avenir Next Condensed', Impact, sans-serif;
+	font-family: 'Marker-Condensed', 'Marker Felt', 'Avenir Next Condensed', Impact, sans-serif;
 	font-style: normal;
 }

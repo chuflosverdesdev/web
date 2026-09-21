@@ -1,5 +1,5 @@
 :root{--black:#070907;--paper:#f3f3ee;--green:#18b85a;--pink:#18b85a;--ink:#070907;--muted:#66706a;--line:rgba(7,9,7,.28)}
-@font-face{font-family:'Marker-Condensed Italic';src:url('assets/fonts/marker-felt-wide.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Marker-Condensed Italic';src:url('assets/fonts/Marker-Condensed Italic.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
 :root{--display:'Marker-Condensed Italic','Marker Felt','Avenir Next Condensed',Impact,sans-serif}
 .site-header{background:linear-gradient(90deg,var(--black) 0%,var(--black) 7%,#efede4 20%,#efede4 34%)}
 .hero-kicker{font:clamp(44px,5.5vw,88px)/.85 var(--display);color:var(--green);margin:0 0 35px;text-shadow:5px 5px 0 var(--black)}
