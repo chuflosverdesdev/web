@@ -1,0 +1,70 @@
+:root{--black:#070907;--paper:#f3f3ee;--green:#18b85a;--pink:#18b85a;--ink:#070907;--muted:#66706a;--line:rgba(7,9,7,.28)}
+:root{--display:'Anton',Impact,sans-serif}
+.site-header{background:linear-gradient(90deg,var(--black) 0%,var(--black) 7%,var(--paper) 20%,rgba(243,243,238,.96) 34%)}
+.hero-kicker{font:clamp(44px,5.5vw,88px)/.85 var(--display);color:var(--green);margin:0 0 35px;text-shadow:5px 5px 0 var(--black)}
+.hero-kicker,.section-heading h2,.member h3,.contact-big,.big-note{font-family:'Permanent Marker',var(--display);letter-spacing:-.04em}
+.main-nav a{font-family:'Permanent Marker',var(--display);font-size:11px;letter-spacing:.03em}
+.hero-kicker span{font-size:.42em;white-space:nowrap;color:var(--paper);text-shadow:5px 5px 0 var(--black)}
+.hero-kicker .bolt{font-size:.72em;color:var(--green);text-shadow:2px 2px 0 var(--black);vertical-align:.08em}
+.main-nav a:nth-last-child(2),.gallery-section .section-heading h2{color:var(--green)!important}
+.cooking{color:var(--black)}
+.cooking .section-heading{border-color:var(--black)}
+.cooking .process-line{background:rgba(15,23,42,.4)}
+.cooking .big-note span{color:var(--black)}
+.cooking .cooking-footer{border-color:rgba(15,23,42,.45)}
+.main-nav a:nth-last-child(2),.main-nav a:last-child{color:var(--ink)!important}
+.main-nav a:hover{color:var(--green)!important}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:calc(100vh - 92px)}
+.magnific-hero{display:block;position:absolute;inset:0;z-index:0;overflow:hidden;background:var(--black);pointer-events:none}
+.magnific-hero img{width:100%;height:100%;object-fit:cover;object-position:center center;filter:saturate(1.05) contrast(1.08)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,18,15,.58),transparent 55%,rgba(16,18,15,.15));z-index:1;pointer-events:none}
+.hero-copy{z-index:4;position:relative;left:auto;right:auto;bottom:auto;max-width:400px;padding:0;background:none;border-left:0;box-shadow:none}
+.hero-collage{display:none}.hero-bottom{z-index:4}
+.hero-collage{height:580px;position:relative;margin-left:2vw}
+.photo-wall{position:absolute;inset:0}
+.wall-photo{position:absolute;overflow:hidden;border:7px solid var(--paper);background:#222;box-shadow:6px 7px 0 var(--green)}
+.wall-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.3)}
+.wall-one{width:45%;height:38%;left:3%;top:2%;transform:rotate(-8deg)}
+.wall-two{width:43%;height:42%;right:4%;top:2%;transform:rotate(8deg)}
+.wall-three{width:50%;height:36%;left:25%;top:22%;transform:rotate(2deg)}
+.wall-four{width:34%;height:31%;left:2%;bottom:5%;transform:rotate(7deg)}
+.wall-five{width:38%;height:32%;right:2%;bottom:4%;transform:rotate(-8deg)}
+.logo-disc{position:absolute;z-index:4;width:42%;aspect-ratio:1;left:29%;top:28%;border:8px solid var(--paper);border-radius:50%;overflow:hidden;box-shadow:9px 11px 0 var(--pink);transform:rotate(-5deg);background:var(--paper)}
+.logo-disc img{width:100%;height:100%;object-fit:cover}
+.wordmark{position:absolute;z-index:6;width:67%;left:16%;bottom:1%;transform:rotate(-2deg);filter:drop-shadow(6px 7px 0 var(--green))}
+.wordmark img{display:block;width:100%;border:5px solid var(--paper)}
+.scribble{z-index:7}.burst{z-index:8}.tape{z-index:9}
+@media(max-width:760px){.hero{display:block;min-height:900px;padding:70px 6vw 0}.hero:after{background:linear-gradient(0deg,rgba(16,18,15,.7),transparent 65%)}.hero-copy{position:relative;left:auto;right:auto;bottom:auto;max-width:none;padding:16px;margin-bottom:12px;background:rgba(16,18,15,.72);border-left:5px solid var(--green);box-shadow:7px 7px 0 var(--pink)}.hero-collage{height:470px;margin:0}.hero-kicker{font-size:48px}.hero-bottom{left:6vw;right:6vw}}
+
+/* Acabado de fanzine: capas de papel, cinta y pintura inspiradas en las referencias. */
+.hero-collage:before{content:"";position:absolute;inset:8% 13% 4%;border:2px solid rgba(232,227,213,.45);transform:rotate(4deg);z-index:1;pointer-events:none}
+.paint-mark{position:absolute;z-index:3;pointer-events:none;mix-blend-mode:screen}
+.paint-red{width:180px;height:35px;background:var(--pink);left:1%;top:46%;transform:rotate(-18deg);clip-path:polygon(2% 22%,100% 0,95% 75%,0 100%)}
+.paint-green{width:150px;height:24px;background:var(--green);right:5%;bottom:25%;transform:rotate(13deg);clip-path:polygon(0 25%,100% 3%,94% 85%,4% 100%)}
+.cutout-note{position:absolute;z-index:8;left:-3%;top:38%;background:var(--paper);color:var(--black);font:bold 12px/1 var(--mono);padding:10px 8px;transform:rotate(-12deg);box-shadow:4px 4px 0 var(--pink)}
+.wall-photo:after,.member-photo:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 2px rgba(0,0,0,.2);pointer-events:none}
+.wall-photo{clip-path:polygon(2% 1%,98% 0,100% 96%,4% 100%)}
+.member-photo{position:relative;box-shadow:7px 8px 0 var(--pink);border:0;padding:7px;background:var(--paper);clip-path:polygon(1% 2%,97% 0,100% 97%,3% 100%)}
+.member-photo img{height:100%;border:2px solid var(--black)}
+.member-photo .photo-tape,.member-photo:before{content:"";position:absolute;z-index:2;width:68px;height:18px;background:rgba(232,227,213,.75);top:-8px;left:30%;transform:rotate(-7deg)}
+.member-dark .member-photo{box-shadow:7px 8px 0 var(--green)}
+@media(max-width:760px){.cutout-note{left:0;top:34%;font-size:10px}.paint-red{width:120px}.paint-green{width:100px}.hero-collage:before{inset:6% 4% 2%}}
+.brand{width:150px;height:58px;overflow:visible;transform:rotate(-3deg);display:block}.brand img{width:100%;height:100%;object-fit:contain;object-position:center;filter:contrast(1.15)}
+.footer-logo{width:220px;height:106px;overflow:visible}.footer-logo img{width:100%;height:100%;object-fit:contain;object-position:center;filter:contrast(1.15)}
+.footer-facebook,.footer-instagram{display:inline-flex;align-items:center;justify-content:center;color:var(--green);width:30px;height:30px}.footer-facebook svg,.footer-instagram svg{display:block;width:100%;height:100%;fill:currentColor}.footer-facebook:hover,.footer-instagram:hover{color:var(--pink)}
+.member-photo{cursor:zoom-in}
+.photo-modal{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:5vw;background:rgba(16,18,15,.94);cursor:zoom-out}.photo-modal[hidden]{display:none}.photo-modal img{max-width:min(92vw,900px);max-height:88vh;width:auto;height:auto;object-fit:contain;filter:none;box-shadow:10px 10px 0 var(--pink);border:8px solid var(--paper)}.photo-modal-close{position:absolute;right:3vw;top:2vw;border:0;background:none;color:var(--paper);font-size:52px;line-height:1;cursor:pointer}
+.floating-brand{position:fixed;z-index:30;top:-4px;left:2vw;width:230px;padding:0;background:transparent;transform:rotate(-4deg);pointer-events:none;filter:drop-shadow(5px 6px 0 var(--black))}.floating-brand img{display:block;width:100%;height:auto}.brand{visibility:hidden}
+@media(max-width:760px){.hero{padding-top:92px}.floating-brand{top:-22px;left:4vw;width:155px}.brand{visibility:hidden}}
+
+/* Paleta de referencia: verde de Extremadura, negro de tinta y blanco de papel. */
+.member h3,.contact-big,.big-note{color:var(--green)}
+.members-grid .member{background:rgba(7,9,7,.82);color:var(--paper);padding:18px}
+.member-photo,.member-dark .member-photo{box-shadow:7px 8px 0 var(--green)}
+.photo-modal img{box-shadow:10px 10px 0 var(--green)}
+.cooking{background-color:var(--paper);color:var(--black)}
+.cooking .eyebrow,.cooking .section-mark,.cooking .big-note,.cooking .recording-date span,.cooking .process-item.active h3,.cooking .process-item.active b{color:var(--green)}
+.hero-kicker,.section-heading h2,.member h3,.contact-big,.big-note,.main-nav a{font-family:'Permanent Marker',cursive;font-style:normal}
+.header-stamp{position:absolute;z-index:31;top:-18px;right:-2vw;width:300px;height:140px;padding:0;border:0;display:flex;align-items:center;justify-content:center;overflow:visible;transform:rotate(2deg)}.header-stamp img{display:block;width:100%;height:100%;object-fit:contain}
+@media(min-width:761px){.site-header .main-nav{position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap}}
+@media(max-width:760px){.site-header .header-stamp{display:none}}
