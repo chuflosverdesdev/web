@@ -15,6 +15,11 @@
 @media(min-width:761px){.tour{background-size:100% auto;background-position:center center;background-color:#3f3150}}
 @media(max-width:760px){.band{background-attachment:scroll;background-position:center top}.contact-card a{font-size:17px}}
 
+.contact-big {
+	font-family: 'Marker-Condensed Italic', 'Marker Felt', 'Avenir Next Condensed', Impact, sans-serif;
+	font-style: normal;
+}
+
 /* Acabado gráfico inspirado en la referencia: tinta negra, papel y verde intenso. */
 .gallery-card:after{color:var(--black);background:var(--green)}
 .contact-big{color:var(--green);text-shadow:5px 5px 0 var(--black)}

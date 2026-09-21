@@ -1,10 +1,10 @@
 :root{--black:#070907;--paper:#f3f3ee;--green:#18b85a;--pink:#18b85a;--ink:#070907;--muted:#66706a;--line:rgba(7,9,7,.28)}
-@font-face{font-family:'Permanent Marker';src:url('assets/fonts/marker-felt-wide.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
-:root{--display:'Permanent Marker','Marker-Condensed Italic','Marker Felt','Avenir Next Condensed',Impact,sans-serif}
+@font-face{font-family:'Marker-Condensed Italic';src:url('assets/fonts/marker-felt-wide.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+:root{--display:'Marker-Condensed Italic','Marker Felt','Avenir Next Condensed',Impact,sans-serif}
 .site-header{background:linear-gradient(90deg,var(--black) 0%,var(--black) 7%,#efede4 20%,#efede4 34%)}
 .hero-kicker{font:clamp(44px,5.5vw,88px)/.85 var(--display);color:var(--green);margin:0 0 35px;text-shadow:5px 5px 0 var(--black)}
-.hero-kicker,.section-heading h2,.member h3,.contact-big,.big-note{font-family:'Permanent Marker',var(--display);letter-spacing:-.04em}
-.main-nav a{font-family:'Permanent Marker',var(--display);font-size:11px;letter-spacing:.03em}
+.hero-kicker,.section-heading h2,.member h3,.contact-big,.big-note{font-family:'Marker-Condensed Italic','Marker Felt','Avenir Next Condensed',Impact,sans-serif;letter-spacing:-.04em}
+.main-nav a{font-family:'Marker-Condensed Italic','Marker Felt','Avenir Next Condensed',Impact,sans-serif;font-size:11px;letter-spacing:.03em}
 .hero-kicker span{font-size:.42em;white-space:nowrap;color:var(--paper);text-shadow:5px 5px 0 var(--black)}
 .hero-kicker .bolt{font-size:.72em;color:var(--green);text-shadow:2px 2px 0 var(--black);vertical-align:.08em}
 .main-nav a:nth-last-child(2),.gallery-section .section-heading h2{color:var(--green)!important}
@@ -65,7 +65,15 @@
 .photo-modal img{box-shadow:10px 10px 0 var(--green)}
 .cooking{background-color:var(--paper);color:var(--black)}
 .cooking .eyebrow,.cooking .section-mark,.cooking .big-note,.cooking .recording-date span,.cooking .process-item.active h3,.cooking .process-item.active b{color:var(--green)}
-.hero-kicker,.section-heading h2,.member h3,.contact-big,.big-note,.main-nav a{font-family:'Permanent Marker',cursive;font-style:normal}
+.hero-kicker,
+.section-heading h2,
+.member h3,
+.contact-big,
+.big-note,
+.main-nav a {
+	font-family: 'Marker-Condensed Italic', 'Marker Felt', 'Avenir Next Condensed', Impact, sans-serif;
+	font-style: normal;
+}
 .header-stamp{position:absolute;z-index:31;top:-18px;right:-2vw;width:300px;height:140px;padding:0;border:0;display:flex;align-items:center;justify-content:center;overflow:visible;transform:rotate(2deg)}.header-stamp img{display:block;width:100%;height:100%;object-fit:contain}
 @media(min-width:761px){.site-header .main-nav{position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap}}
 @media(max-width:760px){.site-header .header-stamp{display:none}}
