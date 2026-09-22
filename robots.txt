@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chuflosverdes-7c1ab.web.app/sitemap.xml

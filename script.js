@@ -137,7 +137,9 @@ galleryImages.forEach((file, index) => {
   card.style.setProperty('--tilt', `${(index % 5 - 2) * 0.7}deg`);
   const image = document.createElement('img');
   image.src = `assets/imagenes/${file}`;
-  image.alt = `Chuflos Verdes — archivo ${String(index + 1).padStart(2, '0')}`;
+  image.alt = `Foto de Chuflos Verdes en concierto o ensayo, archivo ${String(index + 1).padStart(2, '0')}`;
+  image.loading = 'lazy';
+  image.decoding = 'async';
   card.appendChild(image);
   galleryGrid?.appendChild(card);
   card.addEventListener('click', () => {

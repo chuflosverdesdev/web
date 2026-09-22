@@ -2,11 +2,12 @@
 :root{--display:'Permanent Marker','Marker Felt','Avenir Next Condensed',Impact,sans-serif}
 .site-header{background:linear-gradient(90deg,var(--black) 0%,var(--black) 7%,#efede4 20%,#efede4 34%)}
 .hero-kicker{font:clamp(44px,5.5vw,88px)/.85 var(--display);color:var(--green);margin:0 0 35px;text-shadow:5px 5px 0 var(--black)}
-.hero-kicker,.section-heading h2,.member h3,.contact-big,.big-note{font-family:var(--display);letter-spacing:-.04em}
+.hero-copy h1,.hero-kicker,.section-heading h1,.section-heading h2,.member h3,.contact-big,.big-note{font-family:var(--display);letter-spacing:-.04em}
+.hero-copy h1{font-size:clamp(42px,5vw,76px);line-height:.9;color:var(--paper);margin:0 0 18px;text-shadow:5px 5px 0 var(--black)}
 .main-nav a{font-family:var(--display);font-size:11px;letter-spacing:.03em}
 .hero-kicker span{font-size:.42em;white-space:nowrap;color:var(--paper);text-shadow:5px 5px 0 var(--black)}
 .hero-kicker .bolt{font-size:.72em;color:var(--green);text-shadow:2px 2px 0 var(--black);vertical-align:.08em}
-.main-nav a:nth-last-child(2),.gallery-section .section-heading h2{color:var(--green)!important}
+.main-nav a:nth-last-child(2),.gallery-section .section-heading h1,.gallery-section .section-heading h2{color:var(--green)!important}
 .cooking{color:var(--black)}
 .cooking .section-heading{border-color:var(--black)}
 .cooking .process-line{background:rgba(15,23,42,.4)}
@@ -64,7 +65,9 @@
 .photo-modal img{box-shadow:10px 10px 0 var(--green)}
 .cooking{background-color:var(--paper);color:var(--black)}
 .cooking .eyebrow,.cooking .section-mark,.cooking .big-note,.cooking .recording-date span,.cooking .process-item.active h3,.cooking .process-item.active b{color:var(--green)}
+.hero-copy h1,
 .hero-kicker,
+.section-heading h1,
 .section-heading h2,
 .member h3,
 .contact-big,
