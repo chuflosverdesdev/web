@@ -166,3 +166,18 @@ const navigateGalleryByKeyboard = (event) => {
 };
 
 document.addEventListener('keydown', navigateGalleryByKeyboard);
+
+const floatingBrand = document.querySelector('.floating-brand');
+const bandSection = document.querySelector('#banda');
+const siteHeader = document.querySelector('.site-header');
+
+if (floatingBrand && bandSection) {
+  const updateFloatingBrand = () => {
+    const headerBottom = siteHeader ? siteHeader.getBoundingClientRect().bottom : 0;
+    const reachedBand = bandSection.getBoundingClientRect().top <= headerBottom + 1;
+    floatingBrand.classList.toggle('is-hidden', !reachedBand);
+  };
+  updateFloatingBrand();
+  window.addEventListener('scroll', updateFloatingBrand, { passive: true });
+  window.addEventListener('resize', updateFloatingBrand);
+}
