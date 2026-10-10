@@ -1,6 +1,23 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
 
+const concertModal = document.querySelector('.concert-modal');
+if (concertModal instanceof HTMLDialogElement) {
+  const concertDate = new Date('2026-10-17T14:30:00+02:00').getTime();
+  const closeConcertModal = () => concertModal.close();
+
+  concertModal.querySelector('.concert-modal-close')?.addEventListener('click', closeConcertModal);
+  concertModal.querySelector('.concert-modal-dismiss')?.addEventListener('click', closeConcertModal);
+  concertModal.querySelector('.concert-modal-tour-link')?.addEventListener('click', closeConcertModal);
+  concertModal.addEventListener('click', (event) => {
+    if (event.target === concertModal) closeConcertModal();
+  });
+
+  if (Date.now() < concertDate) {
+    window.setTimeout(() => concertModal.showModal(), 350);
+  }
+}
+
 toggle?.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
   toggle.setAttribute('aria-expanded', String(open));

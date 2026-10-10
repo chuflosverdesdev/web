@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=6" />
     <link rel="stylesheet" href="hero-overrides.css?v=11" />
-    <link rel="stylesheet" href="sections-overrides.css?v=6" />
+    <link rel="stylesheet" href="sections-overrides.css?v=7" />
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -94,6 +94,22 @@
         </div>
       </section>
     </main>
+    <dialog class="concert-modal" aria-labelledby="concert-modal-title" aria-describedby="concert-modal-description">
+      <div class="concert-modal-card">
+        <div class="concert-modal-poster">
+          <img src="assets/imagenBanda/concierto-octubre-2026.jpeg" alt="Cartel de Chuflos Verdes en directo en el Albergue Vía de la Plata, Hervás, el 17 de octubre de 2026 a las 14:30." />
+        </div>
+        <div class="concert-modal-copy">
+          <button class="concert-modal-close" type="button" aria-label="Cerrar cartel">×</button>
+          <p class="eyebrow">PRÓXIMA FECHA EN DIRECTO</p>
+          <h2 id="concert-modal-title">¡Nos vemos en Hervás!</h2>
+          <p id="concert-modal-description">Chuflos Verdes en el Albergue Vía de la Plata.</p>
+          <p class="concert-modal-date"><time datetime="2026-10-17T14:30:00+02:00">17 de octubre de 2026 · 14:30 h</time></p>
+          <a class="concert-modal-tour-link" href="#tour">Ver concierto <span aria-hidden="true">↗</span></a>
+          <button class="concert-modal-dismiss" type="button">Seguir viendo la web</button>
+        </div>
+      </div>
+    </dialog>
     <div class="photo-modal" role="dialog" aria-modal="true" aria-label="Fotografía del miembro" hidden>
       <button class="photo-modal-close" aria-label="Cerrar fotografía">×</button>
       <img src="" alt="" />
@@ -139,6 +155,6 @@
       ]
     }
     </script>
-    <script src="script.js?v=2" defer></script>
+    <script src="script.js?v=3" defer></script>
   </body>
 </html>

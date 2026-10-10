@@ -18,6 +18,34 @@
 /* Acabado gráfico inspirado en la referencia: tinta negra, papel y verde intenso. */
 .gallery-card:after{color:var(--black);background:var(--green)}
 .contact-big{color:var(--green);text-shadow:5px 5px 0 var(--black)}
+
+.concert-modal{width:min(900px,calc(100vw - 32px));height:min(84vh,850px);max-width:none;max-height:none;padding:0;border:2px solid var(--green);background:var(--black);color:var(--paper);box-shadow:12px 12px 0 var(--green)}
+.concert-modal::backdrop{background:rgba(7,9,7,.82);backdrop-filter:blur(5px)}
+.concert-modal-card{height:100%;display:grid;grid-template-columns:1.05fr .95fr;overflow:hidden}
+.concert-modal-poster{min-width:0;min-height:0;background:#070907}
+.concert-modal-poster img{display:block;width:100%;height:100%;object-fit:contain}
+.concert-modal-copy{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px;padding:clamp(24px,4vw,52px)}
+.concert-modal-copy .eyebrow{margin:0;color:var(--green)}
+.concert-modal-copy h2{margin:0;color:var(--paper);font:clamp(32px,4vw,52px)/.95 'Permanent Marker','Marker Felt',sans-serif}
+.concert-modal-copy>p:not(.eyebrow){margin:0;line-height:1.6}
+.concert-modal-date{color:var(--green);font-weight:bold}
+.concert-modal-close{position:absolute;top:12px;right:12px;z-index:1;width:42px;height:42px;border:2px solid var(--black);border-radius:50%;background:var(--green);color:var(--black);font-size:30px;line-height:1;cursor:pointer}
+.concert-modal-tour-link{display:inline-flex;align-items:center;gap:16px;margin-top:10px;padding:13px 17px;background:var(--green);color:var(--black);font-weight:bold;text-decoration:none;text-transform:uppercase}
+.concert-modal-tour-link:hover{background:var(--paper)}
+.concert-modal-dismiss{padding:6px 0;border:0;background:none;color:var(--paper);font:inherit;text-align:left;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.concert-modal-dismiss:hover{color:var(--green)}
+#tour{scroll-margin-top:96px}
+@media(max-width:760px){
+  .concert-modal{width:calc(100vw - 20px);height:min(94dvh,900px);box-shadow:6px 6px 0 var(--green)}
+  .concert-modal-card{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .concert-modal-poster img{padding:8px 24px}
+  .concert-modal-copy{gap:10px;padding:18px 22px 22px}
+  .concert-modal-copy .eyebrow{font-size:9px}
+  .concert-modal-copy h2{font-size:clamp(27px,8vw,38px)}
+  .concert-modal-copy>p:not(.eyebrow){font-size:12px}
+  .concert-modal-tour-link{margin-top:2px;padding:11px 14px;font-size:11px}
+  .concert-modal-close{top:10px;right:10px}
+}
 .contact-card a:hover{color:var(--green)}
 .contact-section{background-image:linear-gradient(rgba(243,243,238,.68),rgba(243,243,238,.68)),url("assets/imagenBanda/contact-background.png");background-repeat:no-repeat;background-size:cover;background-position:center}
 .contact-big{font-family:'Permanent Marker','Marker Felt','Avenir Next Condensed',Impact,sans-serif;font-style:normal}
@@ -28,4 +56,3 @@
 .cooking{background-image:linear-gradient(rgba(243,243,238,.72),rgba(243,243,238,.72)),url("assets/imagenBanda/cooking-background.jpeg");background-repeat:no-repeat;background-size:cover;background-position:center}
 .cooking .section-heading,.cooking-copy,.cooking .process,.cooking-footer{position:relative;z-index:1}
 .cooking-copy,.cooking .process{background:rgba(243,243,238,.78);padding:24px;box-shadow:7px 7px 0 rgba(7,9,7,.18)}
-
