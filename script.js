@@ -3,7 +3,7 @@ const nav = document.querySelector('.main-nav');
 
 const concertModal = document.querySelector('.concert-modal');
 if (concertModal instanceof HTMLDialogElement) {
-  const concertDate = new Date('2026-10-17T14:30:00+02:00').getTime();
+  const concertDate = new Date('2026-11-07T22:30:00+01:00').getTime();
   const closeConcertModal = () => concertModal.close();
 
   concertModal.querySelector('.concert-modal-close')?.addEventListener('click', closeConcertModal);
