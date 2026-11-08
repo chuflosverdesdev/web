@@ -81,6 +81,7 @@ footerMark?.addEventListener('keydown', (event) => {
 });
 
 const galleryFiles = [
+  'chufleando-parque-invierno.jpg',
   '028d3363-6177-4cae-a876-203235a40577.webp',
   '0391361c-c478-4fa4-b82c-6c8234f12138.webp',
   '0538f3fa-5f02-4523-9a32-6f40cd4df6c7.webp',
