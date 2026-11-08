@@ -56,3 +56,18 @@
 .cooking{background-image:linear-gradient(rgba(243,243,238,.72),rgba(243,243,238,.72)),url("assets/imagenBanda/cooking-background.jpeg");background-repeat:no-repeat;background-size:cover;background-position:center}
 .cooking .section-heading,.cooking-copy,.cooking .process,.cooking-footer{position:relative;z-index:1}
 .cooking-copy,.cooking .process{background:rgba(243,243,238,.78);padding:24px;box-shadow:7px 7px 0 rgba(7,9,7,.18)}
+.tour-sections{position:relative;z-index:1;display:grid;gap:40px}
+.tour-subsection>h3{font-size:clamp(28px,4vw,42px);margin:0 0 16px}
+.tour-upcoming-list{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 3vw;min-height:110px}
+.tour-action-links{display:flex;flex-wrap:wrap;gap:12px}
+.tour-empty{font:clamp(26px,4vw,42px)/1 var(--display);margin:0}
+.tour-contact-link{display:inline-flex;align-items:center;gap:18px;padding:13px 18px;background:var(--black);color:var(--green);font-weight:bold;text-decoration:none;text-transform:uppercase}
+.tour-contact-link:hover{background:var(--pink);color:var(--paper)}
+.tour-past-title{opacity:.72}
+.tour-past-list{background:rgba(243,243,238,.46);padding:0 2vw;border-top:1px solid rgba(24,32,24,.24)}
+.tour-past-row{grid-template-columns:minmax(100px,.5fr) minmax(0,2fr);gap:18px;padding:14px 0;border-bottom:1px solid rgba(24,32,24,.16)}
+.tour-past-row .tour-date strong{font:28px/1 var(--display)}
+.tour-past-row .tour-date span{font-size:8px;color:rgba(24,32,24,.66)}
+.tour-past-row .tour-place h3{font-size:20px;margin:0 0 3px}
+.tour-past-row .tour-place p{font-size:9px;margin:0}
+@media(max-width:760px){.tour-upcoming-list{align-items:flex-start;flex-direction:column;gap:18px}.tour-past-row{grid-template-columns:minmax(82px,.6fr) minmax(0,1.4fr);gap:10px}.tour-past-row .tour-date span{font-size:7px}}
